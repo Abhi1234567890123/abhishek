@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.vtiger.genercutility.ListenerImplementation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.vtiger.crm.TC_02Createneworganizationwithindustrydropdowncheck">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createOrganisation"/>
+          <include name="logoutApplication"/>
+          <include name="connectToDb"/>
+          <include name="loginApplication"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.crm.TC_02Createneworganizationwithindustrydropdowncheck -->
+      <class name="com.vtiger.crm.TC_01CreateOrganization">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logoutApplication"/>
+          <include name="connectToDb"/>
+          <include name="createOrganisation"/>
+          <include name="loginApplication"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.crm.TC_01CreateOrganization -->
+      <class name="com.vtiger.crm.TC_03CreateOrganisationWithTest">
+        <methods>
+          <include name="createOrganisation"/>
+          <include name="launchBrowser"/>
+          <include name="logoutApplication"/>
+          <include name="connectToDb"/>
+          <include name="loginApplication"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.vtiger.crm.TC_03CreateOrganisationWithTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
